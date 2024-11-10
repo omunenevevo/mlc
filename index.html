@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="zxx" class="no-js"><head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="icon" href="logo.ico" type="image/x-icon">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min_1.js"></script>
+
+		<!-- Site Title -->
+		<title>Mukono Love Church</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript"> 
+	
+/******************************************
+* Popup Box- By Jim Silver @ jimsilver47@yahoo.com
+* Visit http://www.dynamicdrive.com/ for full source code
+* This notice must stay intact for use
+******************************************/
+var ns4=document.layers
+var ie4=document.all
+var ns6=document.getElementById&&!document.all 
+
+//drag drop function for NS 4////
+/////////////////////////////////
+
+var dragswitch=0
+var nsx
+var nsy
+var nstemp
+
+function drag_dropns(name){
+if (!ns4)
+return
+temp=eval(name)
+temp.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP)
+temp.onmousedown=gons
+temp.onmousemove=dragns
+temp.onmouseup=stopns
+}
+
+function gons(e){
+temp.captureEvents(Event.MOUSEMOVE)
+nsx=e.x
+nsy=e.y
+}
+function dragns(e){
+if (dragswitch==1){
+temp.moveBy(e.x-nsx,e.y-nsy)
+return false
+}
+}
+
+function stopns(){
+temp.releaseEvents(Event.MOUSEMOVE)
+}
+
+//drag drop function for ie4+ and NS6////
+/////////////////////////////////
+
+
+function drag_drop(e){
+if (ie4&&dragapproved){
+crossobj.style.left=tempx+event.clientX-offsetx
+crossobj.style.top=tempy+event.clientY-offsety
+return false
+}
+else if (ns6&&dragapproved){
+crossobj.style.left=tempx+e.clientX-offsetx+"px"
+crossobj.style.top=tempy+e.clientY-offsety+"px"
+return false
+}
+}
+
+function initializedrag(e){
+crossobj=ns6? document.getElementById("showimage") : document.all.showimage
+var firedobj=ns6? e.target : event.srcElement
+var topelement=ns6? "html" : document.compatMode && document.compatMode!="BackCompat"? "documentElement" : "body"
+while (firedobj.tagName!=topelement.toUpperCase() && firedobj.id!="dragbar"){
+firedobj=ns6? firedobj.parentNode : firedobj.parentElement
+}
+
+if (firedobj.id=="dragbar"){
+offsetx=ie4? event.clientX : e.clientX
+offsety=ie4? event.clientY : e.clientY
+
+tempx=parseInt(crossobj.style.left)
+tempy=parseInt(crossobj.style.top)
+
+dragapproved=true
+document.onmousemove=drag_drop
+}
+}
+document.onmouseup=new Function("dragapproved=false")
+
+////drag drop functions end here//////
+
+function hidebox(){
+crossobj=ns6? document.getElementById("showimage") : document.all.showimage
+if (ie4||ns6)
+crossobj.style.visibility="hidden"
+else if (ns4)
+document.showimage.visibility="hide"
+} 
+    </script> 
+	</head>
+<!--		<body class="container-fluid">	
+			<div id="showimage" style="position:absolute;width:100px;left:400px;top:180px;z-index:100">
+
+<table border="0" width="500" bgcolor="#000080" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="100%"><table border="0" width="100%" cellspacing="0" cellpadding="0"
+    height="36px">
+      <tr>
+        <td id="dragbar" style="cursor:hand; cursor:pointer" width="100%" onMousedown="initializedrag(event)"><ilayer width="100%" onSelectStart="return false"><layer width="100%" onMouseover="dragswitch=1;if (ns4) drag_dropns(showimage)" onMouseout="dragswitch=0"><font face="Verdana" color="null"><strong><small>                          .</small></strong></font></layer></ilayer></td>
+        <td style="cursor:hand"><a href="#" onClick="hidebox();return false"><img src="close.gif" width="16px"
+        height="14px" border=0></a></td>
+      </tr>
+      <tr>
+        <td width="50px" bgcolor="#FFFFFF" style="padding:4px" colspan="2">
+
+<-- PUT YOUR CONTENT BETWEEN HERE -->
+
+<!--		<div class="container">
+				<div class="row d-flex justify-content-right">
+					<p><img src="img/exam.jpg" class="img-fluid" alt="Responsive image"></p>
+				</div>
+			</div> -->
+			
+<!--END YOUR CONTENT HERE 
+
+</td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table> -->
+
+		<body><header id="header">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row">
+
+			  			<div class="col-lg-3 col-sm-3 col-4 header-top-left no-padding">
+							<a href="tel:+256 (0) 702 412 306"><span class="lnr lnr-phone-handset"></span> <span class="text">+256 (0) 702 412 306</span></a>
+			  				<a href="mailto:mukonolovecurch@gmail.com"> <span class="text">mukonolovechurch@gmail.com</span></a>
+			  			</div>
+			  			<div class="col-lg-3 col-sm-3 col-4 header-top-left no-padding"><marquee>Mukono Love Church is found in Mukono District, opposite Sell Petrol Station, Mukono Central Town.</marquee></div>
+			  		</div>			  					
+	  			</div>
+			</div>
+		    <div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+					  <a href="index.html"><img src="images/logo23.png" alt="" title=""></a>
+					</div>
+					<nav id="nav-menu-container">
+					  <ul class="nav-menu">
+									<li><a href="index.html">Home</a></li>
+					<li class="menu-has-children"><a href="">About Us</a>
+					  <ul>
+						  <li><a href="">Location</a></li>	
+							<li><a href="">History</a></li>	
+						  <li class="menu-has-children"><a href="">Officials</a>
+						  <ul>
+							<!--<li><a href="acad_calendar.php">Academic Calendar</a></li>		-->
+							<li><a href="">Administrator</a></li>		
+						  <li><a href="">Residential Pastor</a></li> 	   		
+						</ul>
+						</li>
+						  <li><a href="">Overseer</a></li>
+						<li><a href="">First lady</a></li> 
+						<li><a href="">Music</a></li>        				                                    		
+					  </ul>
+					</li>
+					<li><a href="">Pastors</a></li>
+				   <li class="menu-has-children"><a href="">Services</a>
+					  <ul>
+						   <li><a target="_blank" href="">Sunday Service</a></li>
+						   <li><a target="_blank" href="">Bible Study</a></li>
+						   <li><a target="_blank" href="">Get in touch</a></li>
+					  </ul> 
+				 </li> 
+					  </ul>
+			     	</nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		</header><!-- #header -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- Indicators -->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol> -->
+  <!-- Wrapper for slides -->
+  		<div class="carousel-inner" role="listbox" style="margin: 0px; padding: 0px; border: 0px; margin: none; ">
+			<div class="item active">
+			      <img src="images/slider_image_21.jpg" alt="Chania" style="min-width:100%; margin: none; padding: none;">
+			    </div>
+			    <div class="item">
+			      <img src="images/slider_image_22.jpg" alt="Chania" style="min-width:100%;">
+			    </div>
+			    <div class="item">
+			      <img src="images/slider_image_23.jpg" alt="Chania" style="width:100%;">
+			    </div>
+			    <div class="item">
+			      <img src="images/slider_image_8.jpg" alt="Flower" style="width:100%;">
+			    </div>
+			    	<div class="item">
+			      <img src="images/slider_image_18.jpg" alt="Flower" style="width:100%;">
+				</div>
+				<div class="item">
+			      <img src="images/slider_image_11.jpg" alt="Flower" style="width:100%;">
+				</div>
+			    <div class="item">
+			      <img src="images/slider_image_16.jpg" alt="Flower" style="width:100%;">
+			    </div>
+			     <div class="item">
+			      <img src="images/slider_image_9.jpg" alt="Flower" style="width:100%;"> 
+			    </div>
+			</div>
+
+
+			<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      			<span class="glyphicon glyphicon-chevron-left"></span>
+      			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+      			<span class="glyphicon glyphicon-chevron-right"></span>
+      			<span class="sr-only">Next</span>
+    		</a>  
+  		
+  		</div> 
+
+
+			<!-- End feature Area -->
+					
+			<!-- Start popular-course Area -->
+		
+		<section>
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<p><img src="images/glance.jpg" class="img-fluid" alt="Responsive image">
+					</p>
+				</div>
+			</div>				
+		</section>
+				<!-- End popular-course Area -->
+			
+
+				<!-- start student leader banner Area -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+		   
+
+		    <!-- Wrapper for slides -->
+		    
+		    <div class="carousel-inner">
+		      	<div class="item active">
+		        	<img src="images/src1.jpg" alt="">
+		      	</div>
+		      
+		      	<div class="item">
+		       		<img src="images/src2.jpg" alt="">
+		      	</div>
+		    
+		    	<div class="item">
+		        	<img src="images/src3.jpg" alt="">
+		      	</div>
+		       
+		       	<div class="item">
+		        	<img src="images/src4.jpg" alt="">
+		      	</div>
+		      
+		     	<div class="item">
+		        	<img src="images/src5.jpg" alt="">
+		      	</div>
+						
+			<!-- Start review Area -->
+			<section>
+		        <div class="container">
+			     	<div class="row d-flex justify-content-center">
+						<div>
+							<div class="title text-center">
+								<h1 class="mb-10">Video Gallery</h1>
+										<!--	<p>Gallery of our activities during the year</p> -->
+							</div>
+						</div>
+					</div>	
+
+			       <div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/61JrCdhBvAk?si=kjllwXmAB0a-9msL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<p> </p><h3> Performing emirembe jili mu Yesu at Mukono Love Church.<p></p>
+					</h3></div>
+
+					<div class="col-sm-4">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Dk8KFIWzUeg?si=Rd6qOTjjqNEIn9gf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							   <p> </p><h3> Pr.Kibuuka's message, you are therefore Jesus Christ's ambassodors.<p></p>
+						 </h3></div>
+
+			       <div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/xZK5Z7DZUq8?si=e6wY7BjaMMTEUNKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<p> </p><h3> How the service is conducted at Mukono Love Church.<p></p>
+			   		</h3></div>
+			    			 			   		
+			  				 					 		
+			    </div>
+        	</section>
+			<!-- End blog Area -->	
+			<!-- End review Area -->	
+			<br>
+			<br><br>
+			<!-- Start cta-one Area -->
+			<section class="cta-one-area relative section-gap">
+				<div class="container">		
+					<div class="overlay overlay-bg"></div>
+						<div class="row justify-content-center pb-50">
+							<div class="wrap">
+								<h1 class="text-white">Mukono Love Church.</h1>
+								<p>
+									We are found in Mukono Town opposite Shell Petrol Station just opposite KFC. 
+								</p>
+								<!--<a class="primary-btn wh" href="#">Register</a>	-->							
+							</div>					
+						</div>
+					</div>	
+			</section>
+			<!-- End cta-one Area -->
+	<!--	<section>
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<p><a target="_blank" href = "harrow.pdf"> <img src="img/harrow1.jpg" class="img-fluid" alt="Responsive image">
+					</p>
+				</div>
+			</div>				
+		</section> -->
+			<!-- Start popular-course Area -->
+			<section>
+				<div>
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content col-lg-6">
+							
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-popular-carusel">
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+									  <div class="overlay overlay-bg"></div>
+									  <p><img class="img-fluid" src="images/p10.jpg" alt=""></p>
+									</div>
+																		
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="images/p11.jpg" alt="">
+									</div>					
+								</div>	
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="images/p12.jpg" alt="">
+									</div>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="images/p13.jpg" alt="">
+									</div>
+								</div>
+							</div>
+				
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="images/p16.jpg" alt="">
+									</div>									
+								</div>	
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="images/p17.jpg" alt="">
+									</div>									
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>	
+			</section>
+			<!-- End popular-course Area -->			
+			
+							<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-footer-widget">
+							<h4>Contact Us</h4>
+			    				<ul>
+			    					<li>Mukono Love Church<br>
+			    						Mukono, Opposite shell petrol station.</li>
+			    
+									<a href="tel:+256 (0) 702 412 306"><li> +256 (0) 702 412 306</a>(Oveseer)</li>
+			   
+			    					<li><a target="_blank" href="mailto:mukonolovechurch@gmail.com">mukonolovechurch@gmail.com</a></li>
+			    					
+			    				</ul>
+						</div>
+					</div>
+				<br>
+				
+				<p> <b>
+					Mukono Love Church is a Church we all recommend you to get services from because who ever can not attend to church in physical, just logs in to their website and get the service online. </b>
+						</p>
+
+						<div class="footer-bottom row align-items-center justify-content-between">
+						<p class="footer-text m-0 col-lg-6 col-md-12">
+						Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved | Mukono Love Church | Designed By <a href="http://omunenevevo.github.io/ug/">Genius Developers Uganda.</a> 
+					
+					<div class="col-lg-6 col-sm-12 footer-social">
+						<a target="_blank" href="https://www.facebook.com/mukonolovechurch/"><i class="fa fa-facebook"></i></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCYIg7mTDQLyC0QZU7b_l4bA">
+							<i class="fa fa-youtube"></i>
+						</a>
+						
+						<a target="_blank" href="https://wa.me/+256(0)702412306">
+							<i class="fa fa-whatsapp"></i>
+						</a>
+						
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js" crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+		  	<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+		    <script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>									
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+<!--	<script src="//code.tidio.co/ng4uxvpwvgr2g0hfqgab2owwz58bagwx.js" async></script> -->
+	
+</div></body></html>
