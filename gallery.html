@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+            .top-image {
+    position: relative;
+    height: 320px;
+    background: url('images/head bar.jpg') center/cover no-repeat;
+}
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .top-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .top-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            padding: 10px 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 0.9rem;
+            background: #fff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-image">
+    <div class="overlay"></div>
+    <a href="index.html" class="back-btn">← Home</a>
+    <div class="top-content">
+        <h1>Gallery</h1>
+        <p>Moments of hope, care, and impact</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/1.jpg" alt="Gallery Image 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2.jpg" alt="Gallery Image 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/3.jpg" alt="Gallery Image 3">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/4.jpg" alt="Gallery Image 4">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/5.jpg" alt="Gallery Image 5">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/6.jpg" alt="Gallery Image 6">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/7.jpg" alt="Gallery Image 7">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/8.jpg" alt="Gallery Image 8">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/9.jpg" alt="Gallery Image 9">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/10.jpg" alt="Gallery Image 10">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/11.jpg" alt="Gallery Image 11">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/12.jpg" alt="Gallery Image 12">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/13.jpg" alt="Gallery Image 13">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/14.jpg" alt="Gallery Image 14">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/15.jpg" alt="Gallery Image 15">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/16.jpg" alt="Gallery Image 16">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/17.jpg" alt="Gallery Image 17">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/18.jpg" alt="Gallery Image 18">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/19.jpg" alt="Gallery Image 19">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/20.jpg" alt="Gallery Image 20">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/21.jpg" alt="Gallery Image 21">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/22.jpg" alt="Gallery Image 22">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/23.jpg" alt="Gallery Image 23">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/24.jpg" alt="Gallery Image 24">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/25.jpg" alt="Gallery Image 25">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/26.jpg" alt="Gallery Image 26">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/27.jpg" alt="Gallery Image 27">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/28.jpg" alt="Gallery Image 28">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/29.jpg" alt="Gallery Image 29">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/30.jpg" alt="Gallery Image 30">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/31.jpg" alt="Gallery Image 31">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/32.jpg" alt="Gallery Image 32">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/33.jpg" alt="Gallery Image 33">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/34.jpg" alt="Gallery Image 34">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/35.jpg" alt="Gallery Image 35">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/36.jpg" alt="Gallery Image 36">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/37.jpg" alt="Gallery Image 37">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/38.jpg" alt="Gallery Image 38">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/39.jpg" alt="Gallery Image 39">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/40.jpg" alt="Gallery Image 40">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/41.jpg" alt="Gallery Image 41">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/42.jpg" alt="Gallery Image 42">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/43.jpg" alt="Gallery Image 43">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/44.jpg" alt="Gallery Image 44">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/45.jpg" alt="Gallery Image 45">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/46.jpg" alt="Gallery Image 46">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/47.jpg" alt="Gallery Image 47">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/48.jpg" alt="Gallery Image 48">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/49.jpg" alt="Gallery Image 49">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/50.jpg" alt="Gallery Image 50">
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Genius Developers Uganda. All Rights Reserved.
+</footer>
+
+</body>
+</html>

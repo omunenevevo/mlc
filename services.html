@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Service</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .header {
+      position: relative;
+      height: 320px;
+      background: url('images/head bar.jpg') center/cover no-repeat;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .header-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Back button (ONLY addition) */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 10px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: -60px auto 40px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-item {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .service-item h3 {
+      margin: 10px 0 6px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2933;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <!-- Back button (ONLY addition) -->
+    <a href="javascript:history.back()" class="back-btn">← Back</a>
+
+    <div class="header-content">
+      <div>
+        <h1>Welcome to Our Church</h1>
+        <p>Join us in worship, faith, and fellowship</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card revealed">
+      <h2>About Our Service</h2>
+      <p>
+        Our church services are centered on worship, the Word of God, prayer,
+        and community. Everyone is welcome to experience God’s love and grow
+        together in faith.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Weekly Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Sunday Service</h3>
+          <p>Time: 9:00 AM – 12:00 PM</p>
+          <p>Main Worship & Sermon</p>
+        </div>
+        <div class="service-item">
+          <h3>Midweek Fellowship</h3>
+          <p>Time: Wednesday, 5:30 PM</p>
+          <p>Prayer & Bible Study</p>
+        </div>
+        <div class="service-item">
+          <h3>Youth Service</h3>
+          <p>Time: Friday, 4:00 PM</p>
+          <p>Youth Worship & Teaching</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact & Location</h2>
+      <p>📍 Mukono, Uganda</p>
+      <p>📞 Phone: +256702412306</p>
+      <p>✉️ Email: mukonolovechurch@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Genius Developers Uganda. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
