@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Change Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: #fff;
+      padding: 40px;
+    }
+    .box {
+      max-width: 700px;
+      margin: auto;
+      background: #0f172a;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 15px;
+    }
+    textarea {
+      height: 180px;
+      resize: none;
+    }
+    button {
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .success {
+      background: #022c22;
+      border-left: 5px solid #22c55e;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+
+  <!-- LOGIN -->
+  <div id="login">
+    <h2>Admin Login</h2>
+    <input type="password" id="password" placeholder="Enter admin password">
+    <button onclick="login()">Continue</button>
+  </div>
+
+  <!-- CHANGE REQUEST -->
+  <div id="request" class="hidden">
+    <h2>What changes do you want to make?</h2>
+    <textarea id="changes" placeholder="Describe the changes clearly..."></textarea>
+    <button onclick="submitChanges()">Submit Changes</button>
+  </div>
+
+  <!-- SUCCESS MESSAGE -->
+  <div id="success" class="hidden success">
+    <h3>✅ Changes Uploaded Successfully</h3>
+    <p>
+      Good changes are uploaded for <strong>Elijah Kitondekiggya</strong> to verify.
+      <br><br>
+      Please check back to the website in a few minutes later.
+      <br><br>
+      Thanks.
+    </p>
+  </div>
+
+</div>
+
+<script>
+  const ADMIN_PASSWORD = "mlc@2026";
+
+  function login() {
+    const pass = document.getElementById("password").value;
+    if (pass === ADMIN_PASSWORD) {
+      document.getElementById("login").classList.add("hidden");
+      document.getElementById("request").classList.remove("hidden");
+    } else {
+      alert("Wrong password");
+    }
+  }
+
+  function submitChanges() {
+    const text = document.getElementById("changes").value.trim();
+    if (text === "") {
+      alert("Please describe the changes first.");
+      return;
+    }
+
+    // Save locally (demo purpose)
+    localStorage.setItem("clientChangeRequest", text);
+
+    document.getElementById("request").classList.add("hidden");
+    document.getElementById("success").classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
